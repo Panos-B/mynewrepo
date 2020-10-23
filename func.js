@@ -1,7 +1,13 @@
-function double(num)
-{
-  return num * 2;
- }
- 
- var x = 2;
- double(x);
+function SecretWord() {
+  let words = ['cat', 'dog', 'bird', 'donkey', 'horse'];
+
+  return words[Math.floor(Math.random() * words.length)];
+}
+
+function playGame() {
+  let secretWord = SecretWord();
+
+  console.log(secretWord);
+}
+
+playGame();
